@@ -15,7 +15,32 @@
 
 
 # ---------------------------------
-#      Solution Goes Here ->
+def time_time():
+   
+
+    def minsToSecs(minute):
+        answer = minute * 60
+        return(answer)
+    def hoursToSecs(hour):
+        answer = hour * 3600
+        return(answer)
+    def daysToSecs(day):
+        answer = day * 86400
+        return(answer)
+    def daysToHours(day):
+        answer = day * 24
+        return answer
+    
+    print("How many hours are in the month of june?")
+    print(daysToHours(30))
+    print("How many minutes are in the monthy of august?")
+    y = daysToHours(31) * 60
+    print(y)
+    
+
+time_time()
+    
+
 # ---------------------------------
 
 
@@ -27,7 +52,17 @@
 
 
 # ---------------------------------
-#      Solution Goes Here ->
+
+def mid(k):
+    length = len(k)
+    if length % 2 == 0:
+        return ""
+    else:
+        middle = length // 2
+        return k[middle]
+print(mid("odd"))
+print(mid("gideon"))
+
 # ---------------------------------
 
 
@@ -36,7 +71,21 @@
 
 
 # ---------------------------------
-#      Solution Goes Here ->
+
+
+def ccNumber():
+    newNumber = ""
+    card = input("Enter your credit card number! ").strip()
+    creditCardNumber = card[:-4]
+    print(creditCardNumber)
+    for creditCardNumber in creditCardNumber :
+        newNumber = newNumber + "*"
+    hiddenCard = newNumber + card[-4:]
+    return hiddenCard
+    
+print(ccNumber()) #SUPER HARD! but also the best one.
+
+
 # ---------------------------------
 
 
@@ -47,12 +96,12 @@
 # For example, consider the following dictionary:
 
 # ```
-# statuses = {
-#     "John": "online",
-#     "Paul": "offline",
-#     "George": "online",
-#     "Ringo": "offline"
-# }
+statuses = {
+    "John": "online",
+    "Paul": "offline",
+    "George": "online",
+    "Ringo": "offline"
+}
 
 # ```
 
@@ -62,7 +111,21 @@
 
 
 # ---------------------------------
-#      Solution Goes Here ->
+def online_count(object):
+    print("objects", object)
+    count = 0
+    for key in object :
+        print("key", key)
+        if object[key] == "online" :
+            count += 1
+
+    return(count)
+print(f"The number of people online: {online_count(statuses)}")
+
+
+
+
+
 # ---------------------------------
 
 
@@ -72,7 +135,10 @@
 # The function should return the price of the item after the discount has been applied. For example, if the price is 100 and the discount is 20, the function should return 80.
 
 # ---------------------------------
-#      Solution Goes Here ->
+def discount (a,b):
+   amount = a - b  
+   return amount
+print(discount(100,20))
 # ---------------------------------
 
 
@@ -83,7 +149,10 @@
 
 
 # ---------------------------------
-#      Solution Goes Here ->
+def pythagoreanTheorum (a, b):
+    hypotenouse = (a ** 2) + (b ** 2)
+    return hypotenouse
+print(pythagoreanTheorum(6,8))
 # ---------------------------------
 
 
@@ -96,5 +165,16 @@
 # Create a python function that takes two numbers and finds the next Nine intervals using the Fibonacci Sequence
 
 # ---------------------------------
-#      Solution Goes Here ->
+def fibonacciSequence (a,b):
+    c = a + b
+    d = c + b
+    e = d + c
+    f = e + d
+    g = f + e
+    h = g + f
+    i = h + g
+    j = i + h
+    k = j + i
+    return(c,d,e,f,g,h,i,j,k)
+print(fibonacciSequence(7,8))
 # ---------------------------------
