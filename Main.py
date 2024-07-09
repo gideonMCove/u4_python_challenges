@@ -15,6 +15,7 @@
 
 
 # ---------------------------------
+import math
 def time_time():
    
 
@@ -152,7 +153,7 @@ print(discount(754,13))
 # ---------------------------------
 def pythagoreanTheorum (a, b):
     hypotenouse = (a ** 2) + (b ** 2)
-    return hypotenouse
+    return math.sqrt(hypotenouse)
 print(pythagoreanTheorum(6,8))
 # ---------------------------------
 
