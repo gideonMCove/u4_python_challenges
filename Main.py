@@ -139,7 +139,7 @@ def discount (a,b):
    b = b/100
    amount = a - (a *b)  
    return amount
-print(discount(100,20))
+print(discount(754,13))
 # ---------------------------------
 
 
